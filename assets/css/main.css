@@ -1,0 +1,92 @@
+/*
+purple: #352384;
+*/
+
+
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*contenedor flexbox*/
+.flex-container{
+	display: flex;
+}
+
+
+.link{
+  padding: 40px 21px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.menu{
+	background-color: transparent;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+}
+
+.menu.flex-container{
+	justify-content: flex-end;
+	padding-right: 20px;
+}
+
+.logo-container{
+	margin-right: auto;
+	margin-left: 80px;
+	align-items: center;
+}
+
+.logo {
+	align-self: center;
+	padding-top:35px;
+}
+
+/*------------Registro-Header--------------*/
+
+#registro{
+	margin: 0;
+}
+
+.bg{
+	max-width: 100%;
+	margin: 0;
+}
+
+video { 
+    max-width: 99vw;
+    height: auto;
+    width: auto;
+    z-index: -100;
+    background-size: cover;
+	margin: 0;
+}
+
+/*-------------Informacion---------------------*/
+
+#informacion{
+	height: 600px;
+	background: linear-gradient(#76278f, #2B1E66);
+}
+
+
+
+.opaque{
+    background-color: rgba(0,0,0,0);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.non-opaque {
+    background-color: white;
+}
