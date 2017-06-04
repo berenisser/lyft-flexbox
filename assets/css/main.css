@@ -112,11 +112,13 @@ body {
 #registro.flex-container{
 	justify-content: flex-end;
 	overflow: hidden;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 #registro{
 	margin: 0;
-	height: 561px;
+	height: 600px;
 	
 }
 
@@ -139,18 +141,42 @@ video {
 .cuadro-blanco{
 	padding: 50px;
 	width: 430px;
-	
-	position: relative;
+	position: absolute;
+	top: 120px;
+	right: 0;
 	background-color: white;
 }
+
+.row-info.flex-container{
+	flex-direction: row;
+}
+
+.row-texto.flex-container{
+	flex-direction: column;
+}
+
+
 
 /*-------------Informacion---------------------*/
 
 #informacion{
-	height: 600px;
 	background: linear-gradient(#76278f, #2B1E66);
+	padding: 70px 140px;
+	color: white;
 }
 
+.row-info.flex-container{
+	justify-content: space-between;
+}
+
+.row-imagen{
+	width: 60%;
+	margin-left: auto;
+}
+
+.row-imagen img{
+	width: 100%;
+}
 
 /*-----------------footer--------------------*/
 
