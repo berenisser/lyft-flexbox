@@ -1,5 +1,7 @@
 /*
 purple: #352384;
+gray: #333447;
+pink: #FF00BF;
 */
 
 
@@ -17,13 +19,19 @@ body {
 	display: flex;
 }
 
-
+/*-------------Nav Bar----------------------------*/
 .link{
-  padding: 40px 21px;
+  /*padding: 40px 21px;*/
+  margin: 18px;
   display: inline-block;
   text-decoration: none;
   color: #fff;
   font-size: 1.2em;
+  cursor: pointer;
+}
+
+.link:hover{
+	color: pink;
 }
 
 .menu{
@@ -32,6 +40,11 @@ body {
 	top:0;
 	left: 0;
 	width: 100%;
+	z-index: 1000;
+}
+
+#navs{
+	align-items: center;
 }
 
 .menu.flex-container{
@@ -40,9 +53,14 @@ body {
 }
 
 .logo-container{
+	background-image: url(../img/logo-white.png);
 	margin-right: auto;
 	margin-left: 80px;
-	align-items: center;
+	background-repeat: no-repeat;
+	width: 70px;
+	background-size: 100%;
+	margin-top: 15px;
+	/*align-self: center;*/
 }
 
 .logo {
@@ -50,15 +68,61 @@ body {
 	padding-top:35px;
 }
 
+.cuatro{
+	border: 1px solid white;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+.cinco{
+	border: 1px solid transparent;
+	color: transparent;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+/*-------------Cambios a Nav BAr on Scroll*/
+.non-opaque {
+    background-color: white;
+    transition: background-color .3s ease 0s;
+}
+
+.logo-rosa{
+	background-image: url(../img/logo-pink.png);
+	background-size: 100%;
+}
+
+.link-gray{
+	color: #333447;
+}
+
+.cuatro-borde{
+	border: 1px solid #333447;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #333447;
+}
+
+.cinco-aparece{
+	border: 1px solid #FF00BF;
+	color: #FF00BF;
+}
+
 /*------------Registro-Header--------------*/
+#registro.flex-container{
+	justify-content: flex-end;
+}
 
 #registro{
 	margin: 0;
+	height: 561px;
+	
 }
 
 .bg{
 	max-width: 100%;
 	margin: 0;
+	justify-content: flex-end;
 }
 
 video { 
@@ -68,6 +132,15 @@ video {
     z-index: -100;
     background-size: cover;
 	margin: 0;
+	
+}
+
+.cuadro-blanco{
+	padding: 50px;
+	width: 430px;
+	
+	position: relative;
+	background-color: white;
 }
 
 /*-------------Informacion---------------------*/
@@ -78,15 +151,32 @@ video {
 }
 
 
+/*-----------------footer--------------------*/
 
-.opaque{
-    background-color: rgba(0,0,0,0);
-  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 60px;
-    border-bottom: 0px;
-    transition: background-color .5s ease 0s;
+.footer.flex-container{
+	background-color: #333447;
+	color: white;
+	padding: 50px 64px;
+	font-size: 14px;
+	/*justify-content: space-between;*/
 }
 
-.non-opaque {
-    background-color: white;
+.columna{
+	width: 178px;
+}
+
+.store{
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.store img{
+	width: 160px;
+	height: 100%;
+}
+
+.row-store{
+	text-align: right;
+	width: 350px;
+	margin-left: auto;
 }

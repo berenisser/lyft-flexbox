@@ -3,20 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/8f8db047c3.js"></script>
 	<link rel="stylesheet" href="assets/css/common.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<title>Lyft Flexbox</title>
 </head>
 <body>
 	<nav class="menu flex-container" id="header">
-		<div class="logo-container">
-			<img src="assets/img/logo-white.png" alt="Logo" class="logo" width="70">
+		<div class="logo-container" id="logo">	
 		</div>
-		<a href="#" class="text-uppercase link">Drive</a>
-		<a href="#" class="text-uppercase link">Explore</a>
-		<a href="#" class="text-uppercase link">Help</a>
-		<a href="#" class="text-uppercase link">Log in</a>
-		<a href="#" class="text-uppercase link">Sign up</a>
+		<div id="navs">
+			<a href="#" class="link" id="uno">Drive</a>
+			<a href="#" class="link" id="dos">Explore <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			<a href="#" class="link" id="tres">Help</a>
+			<a href="#" class="link cuatro" id="cuatro">Log in</a>
+			<a href="#" class="link cinco" id="cinco">Sign up</a>
+		</div>
 	</nav>
 
 	<section class="flex-container" id="registro">
@@ -24,6 +26,15 @@
 			<video poster="https://cdn.lyft.com/brochure/homepage-hero-poster.8ec795d5.jpg" playsinline autoplay muted loop>
 			<source src="assets/img/hero-video.mp4" type="video/mp4">
 			</video>
+			<div class="cuadro-blanco">
+				<div class="caja-blanca">
+				<h1 class="text-uppercase">turn miles into money</h1>
+				<p class="sign-up">sign up to drive lyft</p>
+				<input class="input-number" id="input-number" type="text" placeholder="Phone Number">
+				<button class="btn-driver" id="btn-driver" >BECOME A DRIVER <i class="fa fa-heart" aria-hidden="true"></i></button>
+				<p class="p-info">Already applied? Check the status of your application here.<br><br>Earn money for inviting friends to drive. Learn more.</p>
+			</div>
+			</div>
 		</div>
 	</section>
 
@@ -31,7 +42,61 @@
 		
 	</section>
 
+	<section class="footer flex-container" id="footer">
+		<!-- <div class="row flex-container mt-0"> -->
+			<div class="columna pad-15 mt-0">
+				<h2 class="text-uppercase mt-0">drive</h2>
+				<h2 class="text-uppercase mt-0">ride</h2>
+				<h2 class="text-uppercase mt-0">log in</h2>
+				<p>Help</p>
+				<p>Cities</p>
+				<p>Airports</p>
+				<p>Fare Estimate</p>
+				<p>Free Ride Credits</p>
+				<p>Driver Bonus</p>
+				<p>Gift Cards</p>
+			</div>
+			<div class="columna pad-15">
+				<h2 class="text-uppercase mt-0">partner</h2>
+				<p>Partnerships</p>
+				<p>Business</p>
+				<p>Ambassadors</p>
+				<p>Events</p>
+			</div>
+			<div class="columna pad-15">
+				<h2 class="text-uppercase mt-0">learn</h2>
+				<p>Safety</p>
+				<p>Blog</p>
+				<p>Press</p>
+				<p>Careers</p>
+				<p>Driver<br>Requirements</p>
+				<p>Driver Earnings</p>
+				<p>Driving Jobs</p>
+				<p>Round up &<br>Donate</p>
+			</div>
+		<!-- </div> -->
+		<div class="row-store">
+			<div class="store"> 
+				<img src="assets/img/apple-store.svg" alt="App Store">
+			</div>
+			<div class="store">
+				<img src="assets/img/google-play.png" alt="Google Store">
+			</div>
+			<div class="store">
+				<img src="assets/img/amazon.png" alt="Amazon Store">
+			</div>
+			<div class="store">
+				<img src="assets/img/microsoft.png" alt="Microsoft Store">
+			</div>
+		</div>
+	</section>
 
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
+
+<!-- 
+
+<img src="assets/img/logo-white.png" alt="Logo" id="logo" class="logo" width="70">
+
+-->
