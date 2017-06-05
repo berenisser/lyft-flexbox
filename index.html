@@ -25,17 +25,31 @@
 
 	<section id="registro" class="flex-container">
 		<div class="bg">
-			<video poster="https://cdn.lyft.com/brochure/homepage-hero-poster.8ec795d5.jpg" playsinline autoplay muted loop>
+			<video poster="https://cdn.lyft.com/brochure/homepage-hero-poster.8ec795d5.jpg" autoplay muted loop>
 			<source src="assets/img/hero-video.mp4" type="video/mp4">
 			</video>
-			<div class="cuadro-blanco">
+			<div class="cuadro-blanco flex-container">
 				<div class="caja-blanca">
-				<h1 class="text-uppercase">turn miles into money</h1>
-				<p class="sign-up text-uppercase">sign up to drive lyft</p>
-				<input class="input-number" id="input-number" type="text" placeholder="Phone Number">
-				<button class="btn-driver" id="btn-driver">BECOME A DRIVER <i class="fa fa-heart" aria-hidden="true"></i></button>
-				<p class="p-info">Already applied? Check the status of your application here.<br><br>Earn money for inviting friends to drive. Learn more.</p>
-			</div>
+					<h1 class="text-uppercase miles mb-0 mt-0">turn miles into money</h1>
+					<p class="sign-up text-uppercase mb-0 mt-0">sign up to drive lyft</p>
+					<div class="inputs">
+						<input class="input-number" id="input-number" type="text" placeholder="Phone Number">
+					</div>
+					<div class="inputs hide">
+						<input class="input-name mb-0" id="input-name" type="text" placeholder="First Name">
+					</div>
+					<div class="inputs hide">
+						<input class="input-email mb-0" id="input-email" type="text" placeholder="Email">
+					</div>
+					<div class="inputs hide">
+						<input class="city mb-0" id="city" type="text" placeholder="City">
+					</div>
+					<div class="button-row">
+						<button class="btn-driver" id="btn-driver">Become a Driver</button>
+						<a href="#">Sign Up to Ride</a>
+					</div>
+					<p class="p-info">Already applied? Check the status of your application here.<br>Earn money for inviting friends to drive. Learn more.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -66,39 +80,75 @@
 		</div>
 	</section>
 
+<!-- ..........................videos......................-->
+
+<section class="primer-video flex-container">
+		<div class="amplifly">
+			<h5 class="text-uppercase">watch</h5>
+			<h1 class="text-uppercase">amplify your ride</h1>
+			<p>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
+		</div>
+		<div>
+			<iframe width="850" height="500" src="https://www.youtube.com/embed/fLSmUWOYpKw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</section>
+
+<section class="segundo-video flex-container">
+		<div>
+			<iframe width="850" height="500" src="https://www.youtube.com/embed/v8nyGzOLsdw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="june">
+			<h5 class="text-uppercase">watch</h5>
+			<h1 class="text-uppercase">june</h1>
+			<p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride — and sharing her life, too.</p>
+		</div>
+	</section>
+
+<!--
+<section class="round-up flex-container">
+		<div class="learn-more-texto flex-container">
+			<a href="#"><h5>LEARN MORE</h5></a>
+			<h2>ROUND UP & DONATE</h2>
+			<p>Opt in and we’ll round up each fare to the nearest dollar, then donate the difference to a charitable cause of your choice.</p>
+		</div>
+		<video class="video-round-up" width="850" height="480" poster="https://cdn.lyft.com/brochure/roundup-and-donate.3eef219d.png" playsinline autoplay preload muted>
+ 			<source src="https://cdn.lyft.com/brochure/videos/round-up-and-donate.mp4" type='video/mp4'/>
+		</video>
+</section>   -->
+
 <!-- ..........................footer......................-->
 
 	<section class="footer flex-container" id="footer">
 		<div class="row flex-container mt-0">
 			<div class="columna pad-15 mt-0">
-				<h2 class="text-uppercase mt-0">drive</h2>
-				<h2 class="text-uppercase mt-0">ride</h2>
-				<h2 class="text-uppercase mt-0">log in</h2>
-				<p>Help</p>
-				<p>Cities</p>
-				<p>Airports</p>
-				<p>Fare Estimate</p>
-				<p>Free Ride Credits</p>
-				<p>Driver Bonus</p>
-				<p>Gift Cards</p>
+				<a href="#"><h2 class="text-uppercase mt-0">drive</h2></a>
+				<a href=""><h2 class="text-uppercase mt-0">ride</h2></a>
+				<a href=""><h2 class="text-uppercase mt-0">log in</h2></a>
+				<a href=""><p>Help</p></a>
+				<a href=""><p>Cities</p></a>
+				<a href=""><p>Airports</p></a>
+				<a href=""><p>Fare Estimate</p></a>
+				<a href=""><p>Free Ride Credits</p></a>
+				<a href=""><p>Driver Bonus</p></a>
+				<a href=""><p>Gift Cards</p></a>
 			</div>
 			<div class="columna pad-15">
-				<h2 class="text-uppercase mt-0">partner</h2>
-				<p>Partnerships</p>
-				<p>Business</p>
-				<p>Ambassadors</p>
-				<p>Events</p>
+				<a href=""><h2 class="text-uppercase mt-0">partner</h2></a>
+				<a href=""><p>Partnerships</p></a>
+				<a href=""><p>Business</p></a>
+				<a href=""><p>Ambassadors</p></a>
+				<a href=""><p>Events</p></a>
 			</div>
 			<div class="columna pad-15">
-				<h2 class="text-uppercase mt-0">learn</h2>
-				<p>Safety</p>
-				<p>Blog</p>
-				<p>Press</p>
-				<p>Careers</p>
-				<p>Driver<br>Requirements</p>
-				<p>Driver Earnings</p>
-				<p>Driving Jobs</p>
-				<p>Round up &<br>Donate</p>
+				<a href=""><h2 class="text-uppercase mt-0">learn</h2></a>
+				<a href=""><p>Safety</p></a>
+				<a href=""><p>Blog</p></a>
+				<a href=""><p>Press</p></a>
+				<a href=""><p>Careers</p></a>
+				<a href=""><p>Driver<br>Requirements</p></a>
+				<a href=""><p>Driver Earnings</p></a>
+				<a href=""><p>Driving Jobs</p></a>
+				<a href=""><p>Round up &<br>Donate</p></a>
 			</div>
 		
 			<div class="row-store">

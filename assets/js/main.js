@@ -20,3 +20,14 @@ window.addEventListener('scroll', function () {
     document.getElementById("cinco").classList.remove("cinco-aparece");
   }
 });
+
+
+var inputfields = Array.from(document.getElementsByClassName("hide"));
+	document.getElementById("input-number").addEventListener("click", function(event){
+  		inputfields.forEach(function(el) {
+  			el.classList.remove('hide');
+  		})
+  		event.preventDefault();
+	});
+
+/*-----Validaciones-----*/

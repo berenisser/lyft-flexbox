@@ -13,3 +13,7 @@
 .pad-15{
 	padding: 0 15px;
 }
+
+.hide{
+	display: none;
+}
