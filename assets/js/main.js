@@ -32,44 +32,42 @@ var inputfields = Array.from(document.getElementsByClassName("hide"));
 
 /*-----Validaciones-----*/
 
-document.getElementById("btn-send").addEventListener("click", function(){
+
+document.getElementById("btn-driver").addEventListener("click", function(){
 //Llamamos los valores de los inputs
 	event.preventDefault(); //previene que la página salte al inicio
 
-	var inputNombre = document.getElementById("value-nombre");
-	var inputEmail = document.getElementById("value-email");
-	var inputFono = document.getElementById("value-fono");
-	var inputTexto = document.getElementById("value-texto");
+	var inputFono = document.getElementById("input-number");
+	var inputNombre = document.getElementById("input-name");
+	var inputEmail = document.getElementById("input-email");
+	var inputCity = document.getElementById("city");
 
-	
 
-	if (validarNombre(inputNombre)){
-		if(validarEmail(inputEmail)){
-			if(validarFono(inputFono)){
-				if (validarTexto(inputTexto)){
-				alert("Gracias por ingresar su información de contacto");
-				}
-			}
-		}
-	}
+	validarFono(inputFono);
+	validarNombre(inputNombre);
+	validarEmail(inputEmail);
+	validarCity(inputCity);
+
 })
 
+function validarFono(inputFono){
+	var fono = /^[0-9]{9,11}$/;
+	if(inputFono.value.match(fono)){
+		inputFono.value = "";
+		return true;
+	}else{
+		document.getElementById("error1").classList.remove("ocultar");
+		inputFono.classList.add("border-pink");
+	}
+}
 
-var mensajito, mensajitoTexto;
-//Funciones de validacion
 function validarNombre(inputNombre) {   
 	var letrasNombre = /^[A-Za-z]+$/;  
 	if(inputNombre.value.match(letrasNombre)){  
 		return true;  
 	} else {  
-		/*mensajito = document.createElement("div");
-		mensajitoTexto = document.createTextNode("Please enter your name");
-		mensajito.appendChild(mensajitoTexto);
-		inputNombre.appendChild(mensajito); */
-		inputNombre.value = ""; 
-		alert("Please enter your name");
-		inputNombre.focus();  
-		return false;  
+		document.getElementById("error2").classList.remove("ocultar");
+		inputNombre.classList.add("border-pink");
 	}  
 } 
 
@@ -79,34 +77,18 @@ function validarEmail(inputEmail){
 	if(inputEmail.value.match(formatoCorreo)){  
 		return true;  
 	} else {  
-		inputEmail.value = "";
-		alert("Please enter your email address");  
-		inputEmail.focus();  
-		return false;  
+		document.getElementById("error3").classList.remove("ocultar");
+		inputEmail.classList.add("border-pink");
 	}  
 } 
 
-function validarFono(inputNumber){
-	var fono = /^[0-9]{9,11}$/;
-	if(inputNumber.value.match(fono)){
-		inputNumber.value = "";
-		return true;
-	}else{
-		inputNumber.value = "";
-		alert("Please enter your phone number");  
-		inputNumber.focus();  
-		return false; 
-	}
-}
 
-function validarTexto(inputTexto){
-	var valueTexto = inputTexto.value.length;
-	if(valueTexto == 0){
-		inputTexto.value = "";
-		alert("Please enter a message");
-		inputTexto.focus();
-		return false;
-	} else{
-		return true;
-	}
-}
+function validarCity(inputCity) {   
+	var letrasNombre = /^[A-Za-z]+$/;  
+	if(inputCity.value.match(letrasNombre)){  
+		return true;  
+	} else {  
+		document.getElementById("error4").classList.remove("ocultar");
+		inputCity.classList.add("border-pink");
+	}  
+} 

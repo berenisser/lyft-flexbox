@@ -17,3 +17,11 @@
 .hide{
 	display: none;
 }
+
+.ocultar{
+	display: none;
+}
+
+.show{
+	display: inherit;
+}
